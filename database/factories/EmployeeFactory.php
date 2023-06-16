@@ -18,6 +18,12 @@ class EmployeeFactory extends Factory
     {
         return [
             //
+            "first_name"=>$this->faker->name,
+            "last_name"=>$this->faker->lastName,
+            "email"=>$this->faker->email,
+            "position_id"=>$this->faker->numberBetween(1,10),
+            "available"=>$this->faker->randomElement(["remote", "partially","full"])
         ];
     }
 }
+

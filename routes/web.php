@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Employee;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/form', function () {
-    return view('index');
+    return view('form.index');
 })->name('form.index');
+
+

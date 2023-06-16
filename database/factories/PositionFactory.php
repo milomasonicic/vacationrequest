@@ -18,6 +18,7 @@ class PositionFactory extends Factory
     {
         return [
             //
+            'position_title' => $this->faker->word
         ];
     }
 }

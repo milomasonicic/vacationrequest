@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email');
             $table->unsignedBigInteger('position_id');
             $table->foreign('position_id')->references('id')->on('positions')->onDelete('cascade');        
-            $table->enum('avaliable',['remote','partially','full']);
+            $table->enum('available',['remote','partially','full']);
             $table->timestamps();
         });
     }

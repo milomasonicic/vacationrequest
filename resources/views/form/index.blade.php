@@ -10,8 +10,19 @@
 <body>
     <p>Hi</p>
 
-    <form action="" method="get">
-        <input type="text" name="full_name">
+    @foreach ($es as $e)
+        {{$e->first_name}}
+    @endforeach
+
+    <form action="" method="">
+
+        @csrf
+        <input type="text" name="first_name">
+       
+
+        </label>
+        
+       
         <button type="submit">Submit</button>
     </form>
 </body>
