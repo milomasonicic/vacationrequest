@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/form', function () {
+Route::get('/forms', function () {
     return view('form.index');
 })->name('form.index');
 
